@@ -20,5 +20,5 @@ def get_sum(request):
     data = {}
     number1 = int(request.data.get('number1', 0))
     number2 = int(request.data.get('number2', 0))
-    data['sum'] = number1 + number2
+    data['sum'] = number1 + number2 + 1
     return Response(data, status=status.HTTP_200_OK)
