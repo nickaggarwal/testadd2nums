@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from restapi.views import index
+from restapi.views import index, get_sum
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'', index),
+    path('api/add', get_sum)
 ]
 
